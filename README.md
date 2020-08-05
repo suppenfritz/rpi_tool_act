@@ -16,3 +16,9 @@ command-line tool(gui) for raspberry pi to execute command's by configured confi
 <img src="/img/rpi_tool_act_pic04.jpg">
 <img src="/img/rpi_tool_act_pic05.jpg">
 <img src="/img/rpi_tool_act_pic06.jpg">
+
+execution: without confirmation:
+<img src="/img/rpi_tool_act_pic07.jpg">
+
+execution: with confirmation:
+<img src="/img/rpi_tool_act_pic08.jpg">
