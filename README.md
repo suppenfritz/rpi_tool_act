@@ -4,6 +4,7 @@ command-line tool(gui) for raspberry pi to execute command's by configured confi
 <u>option's:</u>
   - setup description for act-file
   - setup description for command
+  - setup main-command's by setting-file
   - confirm(global) act-file execution by setting-file or setup confirm for selected command
   - act-file: edit / edit with editor / rename / delete / backup(-restore)
   - selected command's before execution
