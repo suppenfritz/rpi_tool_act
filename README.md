@@ -1,2 +1,2 @@
-# rpi_act_tool
-tool for raspberry pi to execute configured command-line command's automatically
+# rpi_tool_act
+tool(gui) for raspberry pi to execute command-line command's by configured config-file's(ini-style) automatically
