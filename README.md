@@ -2,12 +2,11 @@
 command-line tool(gui) for raspberry pi to execute command's by configured config-file's(ini-style) automatically!
 
 <u>option's:</u>
-  - setup description for act-file
-  - setup description for command
-  - setup main-command's by setting-file
-  - confirm(global) act-file execution by setting-file or setup confirm for selected command
-  - act-file: edit / edit with editor / rename / delete / backup(-restore)
-  - selected command's before execution
+  - setup any execution(main-command's & act-file's) option's by gui (show pic's)
+  - setup setting-file by gui
+  - act-file: show info / execute / edit / edit with editor / rename / backup / backup-restore / delete (show pic's)
+  - select command's before execution
+  - and any other cool thing's, test it ... ;)
   
 <hr>
 <img src="/img/rpi_tool_act_pic01.jpg">
