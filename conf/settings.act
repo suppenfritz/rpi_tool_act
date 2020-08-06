@@ -1,0 +1,77 @@
+# ##############################
+# Auto-Command-Tool - settings
+# ##############################
+#
+# entry format:
+#
+# [setting_X] (X = number of setting: 1..n)
+# desc="[description of setting_X]"
+# val="[value of setting_X]"
+#
+# ----------------------------------------------------
+# settings-section's:
+# ----------------------------------------------------
+
+
+# set act-file directory
+[setting_1]
+desc="ACT-file's: directory"
+val="./act_files/"
+
+# ACT-file's:general: execution confirm
+# TRUE:  confirm all command's (ignore act-file confirm option)
+# FALSE: don't confirm command's (ignore act-file confirm option)
+# CMD:   only confirm command's if key confirm=true in act-file section: command_X
+[setting_2]
+desc="ACT-file's:general: command confirm execution default value"
+val="false"
+
+# set act-file:command_X: execution confirm default value
+[setting_3]
+desc="ACT-file's:command_X: execution confirm, default value"
+val="true"
+
+# set menu:command: execution confirm default value
+[setting_4]
+desc="Main:cmd: execution confirm, default"
+val="true"
+
+# set menu: command
+[setting_5]
+desc="Main:cmd: system information's"
+val="cat /etc/*-release"
+
+# set menu: command
+[setting_6]
+desc="Main:cmd: package's - update"
+val="sudo apt-get update"
+
+# set menu: command
+[setting_7]
+desc="Main:cmd: package's - upgrade"
+val="sudo apt-get upgrade"
+
+# set menu: command
+[setting_8]
+desc="Main:cmd: package's - auto-clean"
+val="sudo apt-get autoclean"
+
+# set menu: command
+[setting_9]
+desc="Main:cmd: package's - auto-remove"
+val="sudo apt-get autoremove"
+
+# set menu: command
+[setting_10]
+desc="Main:cmd: system - reboot"
+val="sudo reboot"
+
+# set menu: command
+[setting_11]
+desc="Main:cmd: system - shutdown"
+val="sudo poweroff"
+
+# set act-file: backup directory
+[setting_12]
+desc="ACT-file's: Backup - directory"
+val="./act_files_bkp/"
