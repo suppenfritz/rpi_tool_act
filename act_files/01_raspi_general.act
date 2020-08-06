@@ -1,0 +1,76 @@
+# ###########################################################
+# ACT - command - file
+# ###########################################################
+# format:
+# *******
+#
+# [general]
+# set global act-file description
+# desc="general description for this file"
+# set global execution option
+# # true  = confirm execution all command's,		[command_X]-confirm: ignored !
+# # false = don't confirm all execution command's	[command_X]-confirm: ignored!
+# # cmd   = confirm execution command only if 		[command_X]-confirm: TRUE!
+# confirm="[true,false,cmd]"
+#
+# [command_(X)] X = number of command
+# desc1="command short information, display in menu entry's"
+# desc2="command long information, display on detailed command information"
+# cmd="command for execute on command line"
+# confirm="[true,false] true=confirm execution command[X], ([yes,skip,cancel]?)"
+#
+# recommended tools:
+# editor: Sublime Text3
+# download: https://www.sublimetext.com/
+# FTP-Client(SCP): WinSCP
+# download: https://www.winscp.net/
+#
+# ###########################################################
+
+# -------------------------------------------------------------
+# template for act-file
+# -------------------------------------------------------------
+# [general]
+# desc="general description for act-file"
+# confirm="true"
+#
+# [command_X]
+# desc1="short description"
+# desc2="long description"
+# cmd="[sudo] [cli-command]"
+# confirm="true"
+#
+# [...]
+#
+# -------------------------------------------------------------
+
+# #############################################################
+
+[general]
+desc="this act-file manage system package's \Z1(update/upgrade/auto-clean/auto-remove)\Zn"
+confirm="false"
+
+[command_1]
+desc1="package's: update"
+desc2="system package's: update"
+cmd="sudo apt-get update"
+confirm="true"
+
+[command_2]
+desc1="package's: upgrade"
+desc2="system package's: upgrade"
+cmd="sudo apt-get upgrade"
+confirm="true"
+
+[command_3]
+desc1="package's: auto-clean"
+desc2="system package's: clean up download archiv"
+cmd="sudo apt-get autoclean"
+confirm="true"
+
+[command_4]
+desc1="package's: auto-remove"
+desc2="system package's: remove not used package's"
+cmd="sudo apt-get autoremove"
+confirm="true"
+

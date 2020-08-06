@@ -1,0 +1,69 @@
+# ###########################################################
+# ACT - command - file
+# ###########################################################
+# format:
+# *******
+#
+# [general]
+# set global act-file description
+# desc="general description for this file"
+# set global execution option
+# # true  = confirm execution all command's,		[command_X]-confirm: ignored !
+# # false = don't confirm all execution command's	[command_X]-confirm: ignored!
+# # cmd   = confirm execution command only if 		[command_X]-confirm: TRUE!
+# confirm="[true,false,cmd]"
+#
+# [command_(X)] X = number of command
+# desc1="command short information, display in menu entry's"
+# desc2="command long information, display on detailed command information"
+# cmd="command for execute on command line"
+# confirm="[true,false] true=confirm execution command[X], ([yes,skip,cancel]?)"
+#
+# recommended tools:
+# editor: Sublime Text3
+# download: https://www.sublimetext.com/
+# FTP-Client(SCP): WinSCP
+# download: https://www.winscp.net/
+#
+# ###########################################################
+
+# -------------------------------------------------------------
+# template for act-file
+# -------------------------------------------------------------
+# [general]
+# desc="general description for act-file"
+# confirm="true"
+#
+# [command_X]
+# desc1="short description"
+# desc2="long description"
+# cmd="[sudo] [cli-command]"
+# confirm="true"
+#
+# [...]
+#
+# -------------------------------------------------------------
+
+# #############################################################
+
+[general]
+desc="delete MQTT mosquitto database (retained messages)"
+confirm="cmd"
+
+[command_1]
+desc1="1: mosquitto: stop"
+desc2="1: mosquitto: stop MQTT mosquitto service"
+cmd="sudo service mosquitto stop"
+confirm="true"
+
+[command_2]
+desc1="2: delete database"
+desc2="2: delete MQTT mosquitto database"
+cmd="sudo rm /var/lib/mosquitto/mosquitto.db"
+confirm="true"
+
+[command_3]
+desc1="3: mosquitto start"
+desc2="3: MQTT: start mosquitto service"
+cmd="sudo service mosquitto start"
+confirm="true"

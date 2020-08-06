@@ -1,0 +1,58 @@
+# ###########################################################
+# ACT - command - file
+# ###########################################################
+# format:
+# *******
+#
+# [general]
+# set global act-file description
+# desc="general description for this file"
+# set global execution option
+# # true  = confirm execution all command's,		[command_X]-confirm: ignored !
+# # false = don't confirm all execution command's	[command_X]-confirm: ignored!
+# # cmd   = confirm execution command only if 		[command_X]-confirm: TRUE!
+# confirm="[true,false,cmd]"
+#
+# [command_(X)] X = number of command
+# desc1="command short information, display in menu entry's"
+# desc2="command long information, display on detailed command information"
+# cmd="command for execute on command line"
+# confirm="[true,false] true=confirm execution command[X], ([yes,skip,cancel]?)"
+#
+# recommended tools:
+# editor: Sublime Text3
+# download: https://www.sublimetext.com/
+# FTP-Client(SCP): WinSCP
+# download: https://www.winscp.net/
+#
+# ###########################################################
+
+# -------------------------------------------------------------
+# template for act-file
+# -------------------------------------------------------------
+# [general]
+# desc="general description for act-file"
+# confirm="true"
+#
+# [command_X]
+# desc1="short description"
+# desc2="long description"
+# cmd="[sudo] [cli-command]"
+# confirm="true"
+#
+# [...]
+#
+# -------------------------------------------------------------
+
+# #############################################################
+
+[general]
+desc="this act-file execute follow 'command_X' command's..."
+confirm="cmd"
+
+
+[command_1]
+desc1="install: Tool: wiringpi"
+desc2="install Tool: wiringpi for GPIO handling"
+cmd="sudo apt-get install wiringpi"
+confirm="true"
