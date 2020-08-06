@@ -1,5 +1,5 @@
 # rpi_tool_act
-command-line tool(gui) for raspberry pi to execute command's by configured config-file's(ini-style) automatically!
+command-line tool(gui) (for raspberry pi) to execute command's by configured config-file's(ini-style) automatically!
 
 <u>option's:</u>
   - setup any execution(main-command's & act-file's) option's by gui (show pic's)
