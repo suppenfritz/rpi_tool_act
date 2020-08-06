@@ -1,26 +1,19 @@
 #!/bin/bash
 
-#######################################
-###  Auto-Command-Tool				###
-###  Version 2.1.4.28 beta			###
-###  freeware						###
-###  ©2020 suppenfritz				###
+###########################################
+###  Auto-Command-Tool			###
+###  Version 2.1.4.28 beta		###
+###  freeware				###
+###  ©2020 suppenfritz			###
 ###  editor: Sublime Text3     		###
-#######################################
+###########################################
 
 
 # #####################################
 # script - ToDo
 # #####################################
-#	[ X ] - func_menu_cmd_exec: include loop
-#	[ X ] - sort functions 
-#	[ X ] - include key's: POS1 & END, can't fix, putty $Term/xterm problem!
-#	[ X ] - code: first clean out
-#	[ X ] - release to beta tester
-#	[ X ] - runtime: optimizing (replace external command's with bash included, eg.: let)
-#	[  ] - code: clean out
 #	[  ] - release
-#	[  ] - 
+#	[  ] - code: clean out
 #	[  ] - 
 
 
@@ -88,19 +81,19 @@ declare -r G_ARR_CONF
 # colors: array
 # =====================================
 declare -A G_COLORS
-G_COLORS['red']="\e[91m"				# light red
-G_COLORS['green']="\e[92m"				# light green
-G_COLORS['yellow']="\e[93m"				# light yellow
-G_COLORS['blue']="\e[94m"				# light blue
+G_COLORS['red']="\e[91m"			# light red
+G_COLORS['green']="\e[92m"			# light green
+G_COLORS['yellow']="\e[93m"			# light yellow
+G_COLORS['blue']="\e[94m"			# light blue
 G_COLORS['magenta']="\e[95m"			# light magenta
-G_COLORS['cyan']="\e[96m"				# light cyan
+G_COLORS['cyan']="\e[96m"			# light cyan
 G_COLORS['dark_gray']="\e[90m"			# dark gray
-G_COLORS['dark_orange']="\e[38;5;208m"	# orange
+G_COLORS['dark_orange']="\e[38;5;208m"		# orange
 G_COLORS['orange']="\e[38;5;214m"		# light orange
 G_COLORS['steelblue']="\e[38;5;39m"		# steel blue
 G_COLORS['purple']="\e[38;5;5m"			# purple
-G_COLORS['clear']="\033[0m"				# reset color to default
-declare -r G_COLORS						# lock variable (only readable)
+G_COLORS['clear']="\033[0m"			# reset color to default
+declare -r G_COLORS				# lock variable (only readable)
 
 
 # =======================================
