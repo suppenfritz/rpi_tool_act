@@ -6,7 +6,7 @@ command-line tool(gui) (for raspberry pi) to execute command's by configured con
   - setup setting-file by gui
   - act-file: show info / execute / edit / edit with editor / rename / backup / backup-restore / delete (show pic's)
   - select command's before execution
-  - and any other cool thing's, test it ... ;)
+  - and any other thing's, test it ... ;)
   
 <hr>
 <img src="/img/rpi_tool_act_pic01.jpg">
